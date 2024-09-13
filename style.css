@@ -359,6 +359,7 @@ section {
     background-size: 500px 500px;
     background-repeat: no-repeat;
     border-radius: 50%;
+    z-index: 20;
 }
 
 .rotate-text {
@@ -1207,11 +1208,15 @@ footer {
         width: 250px;
         height: 250px;
         inset: 6px 5px;
+        background: radial-gradient(circle, #fff 0%, #edf4fa 51%, #e5eef7 100%);
         overflow: hidden;
     }
 
     .img-box .image {
-        background-position: top 78% right -73px;
+        width: 250px;
+        height: 250px;
+        background-position: top 30% right -75px;
+        background-size: 400px 400px;
     }
 
     @keyframes floatImage {
