@@ -90,6 +90,7 @@ html {
         rgba(24, 15, 15, 0.3)0px 3px 7px -3px;
     --dark-inner-circle-shadow: rgb(3, 5, 7)3px 3px 6px 0px inset,
         rgba(6, 6, 6, 0.5)-3px -3px 6px 1px inset;
+    --dark-gradient-white-bg3:linear-gradient(109.6deg, rgb(3, 16, 41) 11.2%, rgb(8, 14, 21) 91.1%);
 
 
     --dark-bg-color: #28282B;
@@ -110,6 +111,7 @@ html {
     --font-color: var(--light-font-color);
     --hover-box-shadow: var(--light-hover-box-shadow);
     --gradient-white-bg2: var(--light-gradient-white-bg2);
+    --gradient-white-bg3: var(--light-gradient-white-bg2);
     --text-color: var(--light-color);
     --stroke-color: var(--light-stroke-color);
     --a-tag-color: var(--light-a-tag);
@@ -145,6 +147,7 @@ html {
     --main-color: var(--dark-main-color);
     --hover-box-shadow: var(--dark-hover-box-shadow);
     --gradient-white-bg2: var(--dark-gradient-white-bg2);
+    --gradient-white-bg3: var(--dark-gradient-white-bg3);
     --stroke-color: var(--dark-stroke-color);
     --Cv-Shadow-: var(--dark-CV-shadow);
     --image-box: var(--dark-image-box);
@@ -820,7 +823,7 @@ section {
 }
 
 .filter-buttons button {
-    background: var(--gradient-white-bg2);
+    background: var(--gradient-white-bg3);
     padding: 12px 15px;
     border-radius: 5px;
     border: none;
@@ -1043,6 +1046,7 @@ button.mixitup-control-active {
 
 .input-box input {
     width: 49%;
+    color: var(--text-color);
 }
 
 form input:focus,
