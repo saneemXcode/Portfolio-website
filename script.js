@@ -121,6 +121,25 @@ function skillsCounter(){
     progress_bars.forEach(p => p.style.animation = "progress 2s ease-in-out forwards");
 }
 
+// dark mode and light mode
+
+const darkModeToggle = document.getElementById('dark_mode_toggle');
+const modeIcon = document.getElementById('mode_icon');
+
+darkModeToggle.onclick = () => {
+    document.body.classList.toggle('dark');
+    if (document.body.classList.contains('dark')) {
+        modeIcon.classList.remove('bx-moon');
+        modeIcon.classList.add('bx-sun');
+    } else {
+        modeIcon.classList.remove('bx-sun');
+        modeIcon.classList.add('bx-moon');
+    }
+};
+
+
+
+
 // side progress bar 
 
 let calcScrollValue = ()=>{

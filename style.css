@@ -12,22 +12,221 @@ html {
     user-select: none;
 }
 
+
 :root {
-    --bg-color: #e3edf7;
-    --gradient-white-bg: linear-gradient(0deg, #fff 0%, #edf4fa 51%, #e5eef7 100%);
-    --gradient-color-bg: linear-gradient(180deg, rgba(247, 1, 120, 1)0%,
+    --light-bg-color: #e3edf7;
+    --light-gradient-white-bg: linear-gradient(0deg, #fff 0%, #edf4fa 51%, #e5eef7 100%);
+    --light-gradient-color-bg: linear-gradient(180deg, rgba(247, 1, 120, 1)0%,
             rgba(160, 8, 156, 1)51%,
             rgba(99, 13, 178, 1)100%);
-    --main-color: #e6006d;
-    --font-color: #90979f;
-    --hover-box-shadow: rgba(0, 0, 0, 0.19)0px 10px 20px,
+    --light-main-color: #e6006d;
+    --light-font-color: #90979f;
+    --light-hover-box-shadow: rgba(0, 0, 0, 0.19)0px 10px 20px,
         rgba(0, 0, 0, 0.23)0px 6px 6px;
-    --gradient-white-bg2: linear-gradient(98deg, #e5eef7 0%, #fff 100%);
+    --light-gradient-white-bg2: linear-gradient(98deg, #e5eef7 0%, #fff 100%);
+    --light-color: #000;
+    --light-stroke-color: #770753;
+    --light-a-tag: #000;
+    --light-white-color: #fff;
+    --light-CV-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0,
+        rgba(60, 64, 67, 0.15)0px 2px 6px 2px;
+    --light-image-box: radial-gradient(circle, #fff 0%, #edf4fa 51%, #e5eef7 100%);
+    --light-border: #eaeef0;
+    --light-rotate-text: #f2f6fb;
+    --light-rotate-text-shadow: 0 1px 6px 5.94px rgba(0, 0, 0, 0.2);
+    --light-about-image-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 20px #fffb;
+    --light-about-image-inside-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 20px #fff;
+    --light-about-CV-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0,
+        rgba(60, 64, 67, 0.15)0px 2px 6px 2px;
+    --light-fliter-btn-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0,
+        rgba(60, 64, 67, 0.15)0px 2px 6px 2px;
+    --light-project-box-shadow: rgba(0, 0, 0, 0.18)0px 2px 4px;
+    --light-read-more-btn-shadow: rgba(0, 0, 0, 0.1)0px 1px 3px 0,
+        rgba(0, 0, 0, 0.06)0px 1px 2px 0px;
+    --light-card-shadow: rgba(0, 0, 0, 0.18)0px 2px 4px;
+    --light-contact-info-border: #e8e1e1;
+    --light-contact-info-bg: #e8f1f9;
+    --light-form-input-bg: #d2e9ff;
+    --light-form-input-border: #f8caca;
+    --light-outer-circle-shadow: rgba(50, 50, 93.0.25)0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3)0px 3px 7px -3px;
+    --light-inner-circle-shadow: rgba(204, 219, 232)3px 3px 6px 0px inset,
+        rgba(255, 255, 255, 0.5)-3px -3px 6px 1px inset;
+    --light-progress-shadow: rgba(50, 50, 93.0.25)0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3)0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35)0px -2px 6px 0px inset;
+
+    --light-exp-bg: #05555c;
+    --light-exp-bg2: #277b6d;
+
+
+
+    /* dark theme colors  */
+
+
+    --dark-gradient-black-bg: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    --dark-gradient-color-bg: linear-gradient(to right, #00d9ff, #ee00ff);
+    --dark-main-color: #0df4d1;
+    --dark-font-color: #dddfe1;
+    --dark-hover-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    ;
+    --dark-gradient-white-bg2: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    --dark-stroke-color: #0edbff;
+    --dark-CV-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+    --dark-image-box: radial-gradient(circle, #000 0%, #1B1212 51%, #36454F 100%);
+    --dark-rotate-text: #0d0c30;
+    --dark-rotate-text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.1);
+    --dark-about-image-shadow: 15px 15px 20px rgba(0, 0, 0, 0.25), -15px -15px 20px rgba(255, 255, 255, 0.1);
+    --dark-about-image-inside-shadow: inset 15px 15px 20px rgba(0, 0, 0, 0.5), inset -15px -15px 20px rgba(255, 255, 255, 0.1);
+    --dark-about-CV-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    --dark-fliter-btn-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    --dark-read-more-btn-shadow:rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    --dark-card-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    --dark-contact-info-border: #565656;
+    --dark-contact-info-bg: #171717;
+    --dark-form-input-bg: #4d4d4d;
+    --dark-form-input-border: #060202;
+    --dark-outer-circle-shadow: rgba(50, 50, 93.0.25)0px 6px 12px -2px,
+        rgba(24, 15, 15, 0.3)0px 3px 7px -3px;
+    --dark-inner-circle-shadow: rgb(3, 5, 7)3px 3px 6px 0px inset,
+        rgba(6, 6, 6, 0.5)-3px -3px 6px 1px inset;
+
+
+    --dark-bg-color: #28282B;
+    --dark-color: #fff;
+    --dark-a-tag: #fff;
+    --dark-black--color: #000;
+    --dark-exp-bg: #08adff;
+    --dark-exp-bg2: #45dff0;
+
+
 }
 
+.light {
+    --bg-color: var(--light-bg-color);
+    --gradient-white-bg: var(--light-gradient-white-bg);
+    --gradient-color-bg: var(--light-gradient-color-bg);
+    --main-color: var(--light-main-color);
+    --font-color: var(--light-font-color);
+    --hover-box-shadow: var(--light-hover-box-shadow);
+    --gradient-white-bg2: var(--light-gradient-white-bg2);
+    --text-color: var(--light-color);
+    --stroke-color: var(--light-stroke-color);
+    --a-tag-color: var(--light-a-tag);
+    --color: var(--light-white-color);
+    --Cv-Shadow-: var(--light-CV-shadow);
+    --image-box: var(--light-image-box);
+    --border: var(--light-border);
+    --rotate-text-bg: var(--light-rotate-text);
+    --rotate-text-shadow: var(--light-rotate-text-shadow);
+    --about-image-shadow: var(--light-about-image-shadow);
+    --about-image-inside-shadow: var(--light-about-image-inside-shadow);
+    --about-Cv-shadow: var(--light-about-CV-shadow);
+    --fliter-button-shadow: var(--light-fliter-btn-shadow);
+    --project-box-shadow: var(--light-project-box-shadow);
+    --read-more-btn-shadow: var(--light-read-more-btn-shadow);
+    --card-shadow: var(--light-card-shadow);
+    --contact-info-border: var(--light-contact-info-border);
+    --contact-info-bg: var(--light-contact-info-bg);
+    --form-input-bg: var(--light-form-input-bg);
+    --form-input-border: var(--light-form-input-border);
+    --outer-circle-shadow: var(--light-outer-circle-shadow);
+    --inner-circle-shadow: var(--light-inner-circle-shadow);
+    --progress-shadow: var(--light-progress-shadow);
+    --exp-bg: var(--light-exp-bg);
+    --exp-bg2: var(--light-exp-bg2);
+
+}
+
+
+.dark {
+    --gradient-white-bg: var(--dark-gradient-black-bg);
+    --gradient-color-bg: var(--dark-gradient-color-bg);
+    --main-color: var(--dark-main-color);
+    --hover-box-shadow: var(--dark-hover-box-shadow);
+    --gradient-white-bg2: var(--dark-gradient-white-bg2);
+    --stroke-color: var(--dark-stroke-color);
+    --Cv-Shadow-: var(--dark-CV-shadow);
+    --image-box: var(--dark-image-box);
+    --rotate-text-bg: var(--dark-rotate-text);
+    --rotate-text-shadow: var(--dark-rotate-text-shadow);
+    --about-image-shadow: var(--dark-about-image-shadow);
+    --about-image-inside-shadow: var(--dark-about-image-inside-shadow);
+    --about-Cv-shadow: var(--dark-about-CV-shadow);
+    --fliter-button-shadow: var(--dark-fliter-btn-shadow);
+    --read-more-btn-shadow: var(--dark-read-more-btn-shadow);
+    --card-shadow: var(--dark-card-shadow);
+    --contact-info-border: var(--dark-contact-info-border);
+    --contact-info-bg: var(--dark-contact-info-bg);
+    --form-input-bg: var(--dark-form-input-bg);
+    --form-input-border: var(--dark-form-input-border);
+    --outer-circle-shadow: var(--dark-outer-circle-shadow);
+    --inner-circle-shadow: var(--dark-inner-circle-shadow);
+
+
+    --bg-color: var(--dark-bg-color);
+    --text-color: var(--dark-color);
+    --a-tag-color: var(--dark-a-tag);
+    --color: var(--dark-black--color);
+    --font-color: var(--dark-font-color);
+    --exp-bg: var(--dark-exp-bg);
+    --exp-bg2: var(--dark-exp-bg2);
+
+}
+
+
+
+
+
+
+
+
+.dark-mode-switch {
+    position: relative;
+    width: 50px;
+    height: 30px;
+    border-radius: 14px;
+    background-color: #c3c2c8;
+    top: 2px;
+    left: -5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode-switch i {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    font-size: 21px;
+    /* background-color: ; */
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.2s ease-in-out, background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark .dark-mode-switch i {
+    left: calc(2px + 50%); 
+    color: #000;
+    /* Change icon color in dark mode */
+}
+
+.dark-mode-switch i.bx-moon {
+    content: "\f186";
+    /* Moon icon */
+}
+
+.dark-mode-switch i.bx-sun {
+    content: "\f185";
+    /* Sun icon */
+}
 a {
     text-decoration: none;
-    color: #000;
+    color:var(--a-tag-color);
 }
 
 body {
@@ -83,7 +282,7 @@ span {
 
 .btn {
     background: var(--gradient-color-bg);
-    color: #fff;
+    color: var(--color);
     padding: 8px 10px;
     border-radius: 5px;
     font-weight: 500;
@@ -119,7 +318,7 @@ span {
     height: 4px;
     margin: 6px 0;
     border-radius: 3px;
-    background: #000;
+    background:var(--text-color);
     transition: .4s;
 }
 
@@ -164,6 +363,7 @@ section {
 
 .hero-info h1 {
     font-size: 3.5rem;
+    color: var(--text-color);
 }
 
 .hero-info p {
@@ -182,7 +382,7 @@ section {
     font-weight: 700;
     margin-bottom: 1rem;
     color: transparent;
-    -webkit-text-stroke: 0.1vw #770753;
+    -webkit-text-stroke: 0.1vw var(--stroke-color);
     background: var(--gradient-color-bg);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
@@ -251,6 +451,7 @@ section {
     padding: 10px;
     display: flex;
     align-items: center;
+    color: var(--color);
     justify-content: space-between;
     gap: 8px;
 }
@@ -260,9 +461,8 @@ section {
     padding: 10px;
     border-radius: 5px;
     font-weight: 500;
-    color: #000;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0,
-        rgba(60, 64, 67, 0.15)0px 2px 6px 2px;
+    color: var(--text-color);
+    box-shadow: var(--Cv-Shadow-);
     transition: all .3s ease;
 }
 
@@ -278,7 +478,7 @@ section {
     height: 42px;
     font-size: 1.5rem;
     color: var(--main-color);
-    background: #fff;
+    background: var(--color);
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -289,7 +489,7 @@ section {
 
 .social-media a:hover {
     background: var(--gradient-color-bg);
-    color: #fff;
+    color: var(--color);
 }
 
 .bg-icon {
@@ -346,7 +546,7 @@ section {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: radial-gradient(circle, #fff 0%, #edf4fa 51%, #e5eef7 100%);
+    background: var(--image-box);
     z-index: 10;
 }
 
@@ -377,9 +577,8 @@ section {
     position: relative;
     width: 342px;
     height: 342px;
-    background: black;
-    border: 6px solid #eaeef0;
-
+    background: var(--text-color);
+    border: 6px solid var(--color);
     border-radius: 50%;
     z-index: 1;
     overflow: hidden;
@@ -390,7 +589,7 @@ section {
     content: '';
     position: absolute;
     inset: 20px;
-    background: #00aaff;
+    /* background: #00aaff; */
     border-radius: 50%;
     z-index: 1;
 }
@@ -407,9 +606,9 @@ section {
     position: absolute;
     width: 390px;
     height: 390px;
-    background: #f2f6fb;
+    background: var(--rotate-text-bg);
     border-radius: 50%;
-    box-shadow: 0 1px 6px 5.94px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--rotate-text-shadow);
     animation: rotateText 30s linear infinite;
 }
 
@@ -430,6 +629,7 @@ section {
     top: 0;
     left: 50%;
     font-size: 1.05rem;
+    color: var(--text-color);
 }
 
 /* About us section  */
@@ -444,6 +644,7 @@ section {
     position: relative;
 }
 
+
 .about .about-image .about-hero {
     position: relative;
     top: 15%;
@@ -451,9 +652,10 @@ section {
     width: 300px;
     height: 300px;
     padding-bottom: 10px;
-    background-image: url(san.png);
-    background-position: top 65% right -70px;
-    background-size: 500px 500px;
+    background-image: url(my.jpg);
+    /* background-position: top 65% right -70px; */
+    background-position: top 90% right 36px;
+    background-size: 257px 275px;
     background-repeat: no-repeat;
 }
 
@@ -466,7 +668,7 @@ section {
     border-radius: 10%;
     /* box-shadow: rgba(204,219,232)3px 3px 6px 0px inset,
     rgba(255,255,255,0.5)-3px -3px 6px 1px inset; */
-    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 20px #fffb;
+    box-shadow: var(--about-image-shadow);
 
 }
 
@@ -474,7 +676,7 @@ section {
     position: relative;
     inset: 28px 20px;
     width: 90%;
-    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 20px #fff;
+    box-shadow: var(--about-image-inside-shadow);
 }
 
 .about-content {
@@ -489,6 +691,7 @@ section {
     font-size: 1.6rem;
     line-height: 3rem;
     margin: 0.5rem 0;
+    color: var(--text-color);
 }
 
 .about-content p {
@@ -501,7 +704,7 @@ section {
     padding-left: 40px;
     padding-right: 20px;
     margin-left: 7px;
-    border-left: 3px solid #05555c;
+    border-left: 3px solid var(--exp-bg);
 }
 
 .exp-contents .box {
@@ -517,7 +720,7 @@ section {
     position: absolute;
     width: 12px;
     height: 14px;
-    background-color: #277b6d;
+    background-color: var(--exp-bg2);
     top: 21px;
     left: -30px;
 }
@@ -527,7 +730,7 @@ section {
     position: absolute;
     border-width: 7px;
     border-style: solid;
-    border-color: transparent transparent transparent #277b6d;
+    border-color: transparent transparent transparent var(--exp-bg2);
     top: 21px;
     left: -18px;
 }
@@ -552,9 +755,8 @@ section {
     border: none;
     font-size: 1rem;
     font-weight: 500;
-    color: #000;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0,
-        rgba(60, 64, 67, 0.15)0px 2px 6px 2px;
+    color: var(--text-color);
+    box-shadow: var(--about-Cv-shadow);
     margin-right: .5rem;
     cursor: pointer;
     transition: all .3s ease;
@@ -562,7 +764,7 @@ section {
 
 .about-btn button.active {
     background: var(--gradient-color-bg);
-    color: #fff;
+    color: var(--color);
 }
 
 .text-box {
@@ -623,9 +825,8 @@ section {
     border-radius: 5px;
     border: none;
     font-weight: 500;
-    color: #000;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0,
-        rgba(60, 64, 67, 0.15)0px 2px 6px 2px;
+    color: var(--text-color);
+    box-shadow: var(--fliter-button-shadow);
     margin-right: 0.5rem;
     cursor: pointer;
     transition: all .3s ease;
@@ -634,7 +835,7 @@ section {
 .filter-buttons button:hover,
 button.mixitup-control-active {
     background: var(--gradient-color-bg);
-    color: #fff;
+    color: var(--color);
 }
 
 .project-gallery {
@@ -656,7 +857,7 @@ button.mixitup-control-active {
     align-items: center;
     gap: .5rem;
     padding: 0.5rem;
-    box-shadow: rgba(0, 0, 0, 0.18)0px 2px 4px;
+    box-shadow: var(--project-box-shadow);
     background: var(--gradient-white-bg);
     border-radius: 10px;
     transition: all .3s ease;
@@ -712,11 +913,10 @@ button.mixitup-control-active {
 
 .read-more {
     background: var(--gradient-white-bg2);
-    box-shadow: rgba(0, 0, 0, 0.1)0px 1px 3px 0,
-        rgba(0, 0, 0, 0.06)0px 1px 2px 0px;
+    box-shadow: var(--read-more-btn-shadow);
     padding: 10px 20px;
     border-radius: 5px;
-    color: black;
+    color: var(--text-color);
     font-size: 1rem;
     font-weight: 500;
     margin-right: .8rem;
@@ -744,7 +944,7 @@ button.mixitup-control-active {
 
 .card {
     background: var(--gradient-white-bg2);
-    box-shadow: rgba(0, 0, 0, 0.18)0px 2px 4px;
+    box-shadow: var(--card-shadow);
     padding: 1rem;
     border-radius: 10px;
     min-height: 400px;
@@ -777,6 +977,7 @@ button.mixitup-control-active {
 .card-info h2 {
     font-size: 1.2rem;
     margin-top: 1rem;
+    color:var(--text-color);
 }
 
 .card-info a {
@@ -811,7 +1012,7 @@ button.mixitup-control-active {
 .skills {
     width: 100%;
     background: var(--gradient-white-bg2);
-    box-shadow: rgba(0, 0, 0, 0.18)0px 2px 4px;
+    box-shadow: var(--card-shadow);
     padding: 1rem;
     border-radius: 10px;
 }
@@ -824,9 +1025,9 @@ button.mixitup-control-active {
 .contact-info form input,
 .contact-info form textarea {
     padding: 0.8rem;
-    border: 2px solid #e8e1e1;
+    border: 2px solid var(--contact-info-border);
     margin: 0.5rem 0;
-    background: #e8f1f9;
+    background: var(--contact-info-bg);
     border-radius: 5px;
     outline: none;
     transition: .3s;
@@ -844,8 +1045,8 @@ button.mixitup-control-active {
 form input:focus,
 form textarea:focus {
     filter: brightness(100%);
-    background: #d2e9ff;
-    border: 2px solid #f8caca;
+    background: var(--form-input-bg);
+    border: 2px solid var(--form-input-border);
 }
 
 form textarea {
@@ -853,7 +1054,7 @@ form textarea {
 }
 
 form .btn {
-    padding: 15ppx 20px;
+    padding: 15px 20px;
     cursor: pointer;
     border: none;
 }
@@ -888,8 +1089,7 @@ form .btn {
     margin-bottom: 1rem;
     padding: 20px;
     border-radius: 50%;
-    box-shadow: rgba(50, 50, 93.0.25)0px 6px 12px -2px,
-        rgba(0, 0, 0, 0.3)0px 3px 7px -3px;
+    box-shadow: var(--outer-circle-shadow);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -899,8 +1099,7 @@ form .btn {
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    box-shadow: rgba(204, 219, 232)3px 3px 6px 0px inset,
-        rgba(255, 255, 255, 0.5)-3px -3px 6px 1px inset;
+    box-shadow: var(--inner-circle-shadow);
 }
 
 .outer-circle svg {
@@ -914,10 +1113,13 @@ form .btn {
 .outer-circle svg circle {
     fill: none;
     stroke-width: 15px;
-    stroke: url(#GradientColor);
+    stroke: url(#GradientColorLight);
     stroke-linecap: round;
     stroke-dasharray: 465;
     stroke-dashoffset: 464;
+}
+.dark .outer-circle svg circle {
+    stroke: url(#GradientColorDark); 
 }
 
 .outer-circle h2.counter {
@@ -937,6 +1139,7 @@ h2.counter span {
 .sk-title {
     font-size: 1rem;
     font-weight: 500;
+    color: var(--text-color);
 }
 
 @keyframes progress {
@@ -950,7 +1153,8 @@ footer {
     text-align: center;
     margin: 0 8%;
     padding: 2rem 0;
-    border: 2px solid #e8e1e1;
+    border: 2px solid var(--contact-info-border);
+    color: var(--text-color);
 }
 
 #progress {
@@ -966,9 +1170,7 @@ footer {
     border-radius: 50%;
     color: #1d002c;
     cursor: pointer;
-    box-shadow: rgba(50, 50, 93.0.25)0px 50px 100px -20px,
-        rgba(0, 0, 0, 0.3)0px 30px 60px -30px,
-        rgba(10, 37, 64, 0.35)0px -2px 6px 0px inset;
+    box-shadow: var(--progress-shadow);
 }
 
 #progress-value {
@@ -977,7 +1179,7 @@ footer {
     width: calc(100% - 12px);
     background: var(--gradient-color-bg);
     border-radius: 50%;
-    color: #fff;
+    color: var(--color);
     place-items: center;
     font-size: 25px;
 }
@@ -1097,8 +1299,8 @@ footer {
     }
 
     .about .about-image .about-hero {
-        background-position: top 65% right -85px;
-        background-size: 500px 500px;
+        background-position: top 88% right 25px;
+        background-size: 257px 275px;
     }
 
     .hero-info p {
@@ -1141,8 +1343,16 @@ footer {
         flex-direction: column;
         gap: 2rem;
     }
-
+    .navlist li {
+        margin: 0 0.4em;
+    }
+    .dark-mode-switch {
+        top: 2px;
+        left: 1px;
+    }
 }
+
+
 
 @media(max-width:768px) {
 
@@ -1155,6 +1365,9 @@ footer {
 
     html {
         overflow-x: hidden;
+    }
+    .dark-mode-switch {
+        left: 60px;
     }
 
     .menu-icon .bar,
@@ -1246,18 +1459,22 @@ footer {
     .text-box span {
         font-size: 1rem;
     }
-
-    .about .about-image .about-hero {
-        background-position: top 153% right -10px;
-        background-size: 400px 400px;
-    }
-
+    
     .about-image .about-shadow {
         inset: 78px 0px;
         overflow: hidden;
         width: 85%;
         height: 240px;
     }
+    .about .about-image .about-hero {
+        top: 0;
+        background-position: top 13% right 70px;
+        background-size: 220px 222px;
+    }
+    .about-image {
+        padding-bottom: 30%;
+    }
+
 
     .rotate-text span {
         width: 292px;
@@ -1330,7 +1547,15 @@ footer {
     section {
         padding: 50px 3%;
     }
-
+    .dark-mode-switch {
+    
+        left: -6px; 
+    
+    }
+    header .logo {
+        font-size: 1.3rem;
+        font-weight: 800;
+    }
     .contact-info form .input-box {
         display: block;
     }
@@ -1375,8 +1600,8 @@ footer {
     }
 
     .about .about-image .about-hero {
-        background-position: top 96% right -60px;
-        background-size: 500px 500px;
+        background-position: top 13% right 66px;
+        background-size: 225px 225px;
     }
 
     .about-btn button {
