@@ -1549,11 +1549,11 @@ footer {
     }
     .dark-mode-switch {
     
-        left: -6px; 
+        left: -1px; 
     
     }
     header .logo {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         font-weight: 800;
     }
     .contact-info form .input-box {
