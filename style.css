@@ -894,7 +894,7 @@ button.mixitup-control-active {
     padding-left: 0.5rem;
     padding-bottom: 0.5rem;
 }
-.project-content h3 {
+.project-content h3{
    color: var(--text-color);
 }
 
