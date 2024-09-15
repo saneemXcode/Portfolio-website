@@ -988,6 +988,8 @@ button.mixitup-control-active {
 
 .card-info a {
     margin-top: 20px;
+    background:var(--gradient-color-bg);
+    color: #fff;
 }
 
 .date {
