@@ -58,6 +58,7 @@ html {
 
     --light-exp-bg: #05555c;
     --light-exp-bg2: #277b6d;
+    --light-mode-color:#fff;
 
 
 
@@ -99,6 +100,7 @@ html {
     --dark-black--color: #000;
     --dark-exp-bg: #08adff;
     --dark-exp-bg2: #45dff0;
+    --dark-mode-color:#000;
 
 
 }
@@ -137,6 +139,7 @@ html {
     --progress-shadow: var(--light-progress-shadow);
     --exp-bg: var(--light-exp-bg);
     --exp-bg2: var(--light-exp-bg2);
+    --mode-color:var(--light-mode-color);
 
 }
 
@@ -165,8 +168,7 @@ html {
     --form-input-border: var(--dark-form-input-border);
     --outer-circle-shadow: var(--dark-outer-circle-shadow);
     --inner-circle-shadow: var(--dark-inner-circle-shadow);
-
-
+    --mode-color:var(--dark-mode-color);
     --bg-color: var(--dark-bg-color);
     --text-color: var(--dark-color);
     --a-tag-color: var(--dark-a-tag);
@@ -189,7 +191,8 @@ html {
     width: 50px;
     height: 30px;
     border-radius: 14px;
-    background-color: #c3c2c8;
+    background-color: #ffffff;
+    border: 1px solid var(--text-color);
     top: 2px;
     left: -5px;
     cursor: pointer;
@@ -204,7 +207,7 @@ html {
     left: 2px;
     font-size: 21px;
     /* background-color: ; */
-    color: black;
+    color:var(--mode-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
