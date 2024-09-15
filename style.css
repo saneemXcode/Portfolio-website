@@ -1266,17 +1266,20 @@ footer {
 }
 
 @media(max-width:991px) {
-
+    
     header,
     section,
     footer {
         padding-left: 3%;
-        padding-right: 3%;
+        padding-right: 9%;
     }
 
     .home,
     .portfolio-box {
         flex-direction: column-reverse;
+    }
+    .right-header {
+        margin-right: -70px;
     }
 
     .text b {
@@ -1359,6 +1362,19 @@ footer {
         top: 2px;
         left: 1px;
     }
+    /* header,
+    section,
+    footer {
+        padding-left: 3%;
+        padding-right: 3%;
+    } */
+    header, section, footer {
+        padding-left: 3%;
+        padding-right: 12%;
+    }
+    .right-header {
+        margin-right: -100px;
+    }
 }
 
 
@@ -1378,6 +1394,10 @@ footer {
     .dark-mode-switch {
         left: 60px;
     }
+     .right-header {
+        margin-right: 0px;
+    } 
+
 
     .menu-icon .bar,
     .menu-icon::after,
@@ -1639,7 +1659,5 @@ footer {
 
         min-height: 300px;
     }
-    .skill-box {
-        padding: 0 5px 2px;
-    }
+   
 }
