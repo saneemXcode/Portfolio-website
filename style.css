@@ -1271,17 +1271,13 @@ footer {
     section,
     footer {
         padding-left: 3%;
-        padding-right: 9%;
+        padding-right: 3%;
     }
 
     .home,
     .portfolio-box {
         flex-direction: column-reverse;
     }
-    .right-header {
-        margin-right: -70px;
-    }
-
     .text b {
         position: absolute;
         transform-origin: 0 195px;
@@ -1347,6 +1343,7 @@ footer {
         border-radius: 10px 10px 0 0;
         height: 300px;
     }
+
 }
 
 @media(max-width:885px) {
@@ -1361,19 +1358,6 @@ footer {
     .dark-mode-switch {
         top: 2px;
         left: 1px;
-    }
-    /* header,
-    section,
-    footer {
-        padding-left: 3%;
-        padding-right: 3%;
-    } */
-    header, section, footer {
-        padding-left: 3%;
-        padding-right: 12%;
-    }
-    .right-header {
-        margin-right: -100px;
     }
 }
 
@@ -1577,9 +1561,7 @@ footer {
         padding: 50px 3%;
     }
     .dark-mode-switch {
-    
         left: -1px; 
-    
     }
     header .logo {
         font-size: 1.4rem;
@@ -1656,7 +1638,6 @@ footer {
     }
 
     .card {
-
         min-height: 300px;
     }
    
