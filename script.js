@@ -145,6 +145,7 @@ darkModeToggle.onclick = () => {
 let calcScrollValue = ()=>{
   let scrollProgress = document.getElementById("progress");
   let pos = document.documentElement.scrollTop;
+  const isDarkMode=document.body.classList.contains('dark');
 
   let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   let scrollValue = Math.round((pos * 100)/calcHeight);
@@ -158,8 +159,12 @@ let calcScrollValue = ()=>{
   scrollProgress.addEventListener("click",()=>{
       document.documentElement.scrollTop = 0;
   });
-
-  scrollProgress.style.background = `conic-gradient(#fff ${scrollValue}%,#e6006d ${scrollValue}%)`;
+  if(isDarkMode){
+    scrollProgress.style.background = `conic-gradient(#fff ${scrollValue}%,#00d9ff ${scrollValue}%)`;
+ }else{
+    scrollProgress.style.background = `conic-gradient(#fff ${scrollValue}%,#e6006d ${scrollValue}%)`;
+ }
+  
 };
 
 window.onscroll = calcScrollValue;
