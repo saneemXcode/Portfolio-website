@@ -1639,4 +1639,7 @@ footer {
 
         min-height: 300px;
     }
+    .skill-box {
+        padding: 0 5px 2px;
+    }
 }
