@@ -226,7 +226,7 @@ ScrollReveal({
 ScrollReveal().reveal('.hero-info,.main-text,.headings,.heading', { origin: "top" });
 ScrollReveal().reveal('.about-image,.filter-buttons,.contact-info', { origin: "left" });
 ScrollReveal().reveal('.about-content,.skills', { origin: "right" });
-ScrollReveal().reveal('.project-gallery,footer,.image-hero', { origin: "bottom" });
+ScrollReveal().reveal('.project-gallery,footer,.image-hero,.certify', { origin: "bottom" });
 
 
 document.getElementById('contactForm').addEventListener('submit', function(e) {
